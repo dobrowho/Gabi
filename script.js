@@ -85,5 +85,3 @@ buttonRight.addEventListener("touchend", (e) =>
     }
 })
 
-
-
