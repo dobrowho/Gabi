@@ -1,0 +1,130 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #000000;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #ffe1e1;
+    font-weight: bold;
+}
+
+div.main
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 95%;
+    height: 95%;
+
+    background: url("background.svg");
+    border-radius: 12% 5% 12% 5%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+.title
+{
+    width: 80%;
+    height: 8%;
+    /* border: 2px solid black; */
+    text-align: center;
+    justify-content: center;
+    font-size: 150%;
+}
+
+.mtitle
+{
+    width: 80%;
+    height: 8%;
+    /* border: 2px solid black; */
+    text-align: center;
+    justify-content: center;
+    font-size: 180%;
+}
+
+.pic
+{
+    width: 80%;
+    height: 35%;
+    border: 2px solid black;
+    background-image: url(1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all ease;
+}
+
+.description
+{
+    width: 80%;
+    height: 35%;
+    background-color: rgba(252,116,152,0.7);
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 120%;
+}
+
+.arrows
+{
+    width: 80%;
+    height: 8%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 50%;
+    align-items: center;
+    align-content: center;
+}
+
+
+div.arrows > *
+{
+    width: 50%;
+    height: 100%;
+}
+
+.left
+{
+    background-image: url(straight-right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    rotate: 180deg;
+    transition: 0.3s;
+}
+
+.left:hover
+{
+    transform: scale(1.2);
+}
+
+.right
+{
+    background-image: url(straight-right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.right:hover
+{
+    transform: scale(1.2);
+}
+
+.main > *
+{
+    border-radius: 10%;
+}
