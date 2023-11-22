@@ -37,7 +37,7 @@ pics.style.backgroundImage = "url(./1.jpeg)"
 let image = "url(./" + pic + ".jpeg)";
 pics.style.backgroundImage = image;
 
-buttonLeft.addEventListener("touchstart", (e) =>
+buttonLeft.addEventListener("touchend", (e) =>
 {
     if(number)
     {
@@ -61,7 +61,7 @@ buttonLeft.addEventListener("touchstart", (e) =>
     }
 })
 
-buttonRight.addEventListener("touchstart", (e) =>
+buttonRight.addEventListener("touchend", (e) =>
 {
     if(number<7)
     {
